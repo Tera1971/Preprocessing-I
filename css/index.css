@@ -145,6 +145,12 @@ nav {
   justify-content: flex-end;
   padding: 40px;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 nav a {
   font-size: 20px;
   padding: 30px;
@@ -167,9 +173,9 @@ h1 {
 .info {
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 750%;
   padding-left: 10%;
-  background-color: lavender;
+  background-color: powderblue;
 }
 .about-section {
   display: flex;
@@ -177,6 +183,15 @@ h1 {
   font-size: 35px;
   padding-left: 30% 10%;
   width: 80%;
+}
+@media (max-width: 500px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .about-section h2 {
   font-size: 30px;
@@ -194,8 +209,10 @@ h1 {
   width: 60%;
   text-align: center;
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .about-section h2 div p {
+    display: flex;
+    flex-direction: column;
     width: 90%;
   }
 }
@@ -223,9 +240,9 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-input[type=text],
-select,
-textarea {
+.container input[type=text],
+.container select,
+.container textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -233,40 +250,57 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type=submit] {
+.container input[type=text] input[type=submit],
+.container select input[type=submit],
+.container textarea input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
-input[type=submit]:hover {
+.container input[type=text] input[type=submit] input[type=submit]:hover,
+.container select input[type=submit] input[type=submit]:hover,
+.container textarea input[type=submit] input[type=submit]:hover {
   background-color: #45a049;
 }
-/* Style the container/contact section */
-.container {
+.container input[type=text] input[type=submit] input[type=submit]:hover .container,
+.container select input[type=submit] input[type=submit]:hover .container,
+.container textarea input[type=submit] input[type=submit]:hover .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: powderblue;
   padding: 10px;
+  /* Create two columns that float next to eachother */
 }
-/* Create two columns that float next to eachother */
-.column {
+.container input[type=text] input[type=submit] input[type=submit]:hover .container .column,
+.container select input[type=submit] input[type=submit]:hover .container .column,
+.container textarea input[type=submit] input[type=submit]:hover .container .column {
   float: left;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
+  /* Clear floats after the columns */
 }
-/* Clear floats after the columns */
-.row:after {
+.container input[type=text] input[type=submit] input[type=submit]:hover .container .column .row:after,
+.container select input[type=submit] input[type=submit]:hover .container .column .row:after,
+.container textarea input[type=submit] input[type=submit]:hover .container .column .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column,
-  input[type=submit] {
+@media screen and (max-width: 500px) {
+  .container input[type=text] input[type=submit] input[type=submit]:hover .container .column .row:after .column,
+  .container select input[type=submit] input[type=submit]:hover .container .column .row:after .column,
+  .container textarea input[type=submit] input[type=submit]:hover .container .column .row:after .column,
+  .container input[type=text] input[type=submit] input[type=submit]:hover .container .column .row:after input[type=submit],
+  .container select input[type=submit] input[type=submit]:hover .container .column .row:after input[type=submit],
+  .container textarea input[type=submit] input[type=submit]:hover .container .column .row:after input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+footer {
+  background-color: powder-blue;
+  justify-content: center;
+  align-items: center;
 }
