@@ -50,6 +50,11 @@ table {
 
 /* Set every element's box-sizing to border-box */
 @primary-color: lavender;
+@media( max-width: 500px){
+	display: flex;
+	flex-direction: column;
+	.center();
+}
 .center(){
 	justify-content: center;
 	align-items: center;
@@ -72,10 +77,7 @@ nav{
 	display: flex;
 	justify-content: flex-end;
     padding: 40px;
-	@media ( max-width: 500px){
-		display: flex;
-		flex-direction: column;
-	}
+	@media ( max-width: 500px){};
 	
 	a{
 		
@@ -112,12 +114,8 @@ h1{
 	font-size: 35px;
 	padding-left: 30% 10%;
 	width: 80%;
-	@media( max-width: 500px){
-		display: flex;
-		flex-direction: column;
-		padding-left: 50px;
-		.center();
-	}
+	@media( max-width: 500px){};
+	
 	
 
 
@@ -137,11 +135,8 @@ h1{
 		  text-align: center;
 		  
 		  
-		  @media ( max-width: 500px ) {
-			  display: flex;
-			  flex-direction: column;
-			width: 90%;
-		  }
+		  @media ( max-width: 500px ){}
+			
  
  }
 	
@@ -182,7 +177,7 @@ input[type=text], select, textarea {
   
   
   input[type=submit] {
-	background-color: #4CAF50;
+	background-color: powderblue;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -190,7 +185,7 @@ input[type=text], select, textarea {
   
   
   input[type=submit]:hover {
-	background-color: #45a049;
+	background-color: powderblue;
   
   
 
@@ -200,7 +195,7 @@ input[type=text], select, textarea {
 	padding: 10px;
   
   
-  /* Create two columns that float next to eachother */
+  
   .column {
 	float: left;
 	width: 50%;
@@ -208,7 +203,7 @@ input[type=text], select, textarea {
 	padding: 20px;
   
   
-  /* Clear floats after the columns */
+ 
   .row:after {
 	content: "";
 	display: table;
@@ -216,19 +211,16 @@ input[type=text], select, textarea {
   
   
   
-  @media screen and (max-width: 500px) {
-	.column, input[type=submit] {
-	  width: 100%;
-	  margin-top: 0;
-	}
+  @media(max-width: 500px) {}
+  }
   }
 }
   }
 }
   }
 }
-}
-}
+
+
 footer {
 	background-color: powder-blue;
 	.center();
