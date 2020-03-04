@@ -133,7 +133,6 @@ table {
   box-sizing: border-box;
   color: black;
   max-width: 100%;
-
 }
 html,
 body {
@@ -166,19 +165,21 @@ h1 {
   border-bottom: 1px solid black;
 }
 .info {
-  display: flex;
-  padding: 20px 20px;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-left: 10%;
   background-color: lavender;
 }
 .about-section {
   display: flex;
   justify-content: space-evenly;
   font-size: 35px;
-  padding: 30px;
+  padding-left: 30% 10%;
+  width: 80%;
 }
 .about-section h2 {
-  font-size: 35px;
+  font-size: 30px;
   padding: 30px;
 }
 .about-section h2 div {
@@ -198,73 +199,74 @@ h1 {
     width: 90%;
   }
 }
-.employment{
+.employment {
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
+  width: 90%;
   text-align: left;
-  padding: 10%;
-
-  h2 {
-     justify-content: center;
-     .text-align:center
-    font-size: 30px;
-  }
-}  
-  
-.contact-container{
- 
-font-size: 30px;
-justify-content: center;
-align-items: center;
-
-.contact-me{
+  padding: 10% 20%;
+}
+.employment h2 {
   font-size: 30px;
- justify-content: center;
 }
+.contact {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
 }
-
-
-input[type=text], select, textarea {
+.container {
+  display: flex;
+  color: lavender;
+  width: 85%;
+  padding-left: 20%;
+  justify-content: center;
+  align-items: center;
+}
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=submit] {
-  background-color: black;
+  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
-  background-color: white;
-  color: black;
-} 
-
+  background-color: #45a049;
+}
+/* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 10px;
 }
-
-
+/* Create two columns that float next to eachother */
 .column {
   float: left;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
 }
-
-
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.text-align:center{
-  font-size: 30px;
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

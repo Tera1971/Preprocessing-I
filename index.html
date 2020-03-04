@@ -25,7 +25,7 @@
   
     <div class="initials">
     <header>
-    <img src="initials3.jpg" alt="TG" class="center">
+    <img src="me2.jpg" alt="TG" class="center">
     </div>
 
    <section class="info">
@@ -56,14 +56,15 @@
 </div>
 </section>
 <section class="employment">
+
 <h2>Employment History</h2>
-  <div>
-<table style="width:100%">
+  <table style="width:100%">
  
   <tr>
-    <th>Company</th>
-    <th>Years</th>
-  </tr>
+    <th>Company</th><br>
+    <th>Years</th><br>
+  </tr><br>
+  <div>
   <tr>
     <td>Kangaroo Express</td>
     <td>2007-2011</td>
@@ -81,35 +82,37 @@
     <td>2018-2019</td>
   </tr>
 </div>
+</div>
 </table>
 
 
   </section>
-  <section class="contact-container">
-    <div class ="contact-me">
-      <h2>Contact Me</h2>
-      <p>Leave your contact information and I will get back to you:</p>
+ <section class="container">
+  <div class="contact">
+    <h2>Contact Me</h2>
+    <p>If You Are Interested, Please Leave Your Information:</p>
+  </div>
+  <div class="row">
+    
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
     </div>
-
-     
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </section>
+  </div>
+</section>
   </div>
 
 
