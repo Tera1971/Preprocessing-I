@@ -8,12 +8,118 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="http://tera-gilbert.me/portfolio-website">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  
+    <div class="initials">
+    <header>
+    <img src="me2.jpg" alt="TG" class="center">
+    </div>
+  </header>
+   <section class="info">
+      <h1>Tera Gilbert<br>
+        612 Middle Creek Road<br>
+        Cedar Bluff, VA 24609<br>
+        (276)963-8010 </h1>
+  </section>
+  <section id="about" class="about-section">
+    <div>
+    <h2>About Me</h2>
+      
+        <p>I have spent many years in customer service,<br> from cooking to management.
+          I wanted a career <br>in a field that has always been a dream. So, I <br>joined 
+          Lambda School, to learn Web Developement.
+        </p>
+      </div>
+    <div>
+   <h2>My Skills</h2>
+   <ul style="list-style-type:none;">
+    <li>Customer Service</li>
+    <li>Store Management</li>
+    <li>Inventory Control</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Responsive Design</li>
+  </ul>
+</div>
+</section>
+<section class="employment">
+
+<h2>Employment History</h2>
+  <table style="width:100%">
+ 
+  <tr>
+    <th>Company</th><br>
+    <th>Years</th><br>
+  </tr><br>
+  <div>
+  <tr>
+    <td>Kangaroo Express</td>
+    <td>2007-2011</td>
+  </tr>
+  <tr>
+    <td>Walmart</td>
+    <td>2011-2014</td>
+  </tr>
+  <tr>
+   <td> Jetline</td>
+   <td>2015-2018</td>
+  </tr>
+  <tr>
+    <td>AT&T</td>
+    <td>2018-2019</td>
+  </tr>
+</div>
+</div>
+</table>
+
+
+  </section>
+ <section class="container">
+  <div class="contact">
+    <h2>Contact Me</h2>
+    <p>If You Are Interested, Please Leave Your Information:</p>
+  </div>
+  <div class="row">
+    
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <h2>Made by Tera Gilbert</h2>
+</footer>
+  </div>
+
+
+
+
 </body>
 </html>

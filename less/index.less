@@ -49,11 +49,180 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@secondary-color: powderblue;
+@primary-color: lavender;
+@media( max-width: 500px){
+	display: flex;
+	flex-direction: column;
+	.center();
+}
+.center(){
+	justify-content: center;
+	align-items: center;
+}
 * {
-    box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  max-width: 100%;
 }
 
 html, body {
-    height: 100%;
+	font-family: 'Tangerine', cursive;
+	height: 100%;
+	background-color: @primary-color;
+	
+}
+nav{
+	display: flex;
+	justify-content: flex-end;
+    padding: 40px;
+	@media ( max-width: 500px){};
+	
+	a{
+		
+		font-size: 20px;
+		padding: 30px;
+		text-decoration: none;
+		color: black;
+		
+	}
+}
+.initials{
+	display: flex;
+    .center();
+	padding-bottom: 50px;
+}
+h1{
+	width: 100%;
+	font-size: 40px;
+	padding: 90%x;
+	color: black;
+	border-bottom: 1px solid black;
+	
 }
 
+.info{
+	.center();
+	width: 750%;
+	padding-left: 10%;
+	background-color: white;
+}
+.about-section{
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 35px;
+	padding-left: 30% 10%;
+	width: 80%;
+	@media( max-width: 500px){};
+	
+	
+
+
+	h2{
+		font-size: 30px;
+		padding:30px;
+	
+	div { 
+		display: flex;
+		.center();
+		margin: 1%;
+		padding: 2%;
+		
+		p { 
+			font-size: 30px;
+		  width: 60%;
+		  text-align: center;
+		  
+		  
+		  @media ( max-width: 500px ){}
+			
+ 
+ }
+	
+	}
+		}
+			}
+
+.employment{
+	.center();
+	font-size: 30px;
+	width: 90%;
+	text-align: left;
+	padding: 10% 20%;
+
+	h2{
+		font-size: 30px;
+	}
+}
+.contact{
+	font-size: 30px;
+	.center();
+}
+.container{
+	display: flex;
+	color: @primary-color;
+	width: 85%;
+	padding-left: 20%;
+	.center();
+
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  
+  
+  input[type=submit] {
+	
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+  
+  
+  input[type=submit]:hover {
+	@primary-color;
+  
+  
+
+  .container {
+	border-radius: 5px;
+	@secondary-color;
+	padding: 10px;
+  
+  
+  
+  .column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+  
+  
+ 
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  
+  
+  
+  @media(max-width: 500px) {}
+  }
+  }
+}
+  }
+}
+  }
+}
+
+
+footer {
+	background-color: powder-blue;
+	.center();
+}

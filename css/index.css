@@ -1,1 +1,306 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  max-width: 100%;
+}
+html,
+body {
+  font-family: 'Tangerine', cursive;
+  height: 100%;
+  background-color: lavender;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav a {
+  font-size: 20px;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+}
+.initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+h1 {
+  width: 100%;
+  font-size: 40px;
+  padding: 90%x;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.info {
+  justify-content: center;
+  align-items: center;
+  width: 750%;
+  padding-left: 10%;
+  background-color: powderblue;
+}
+.about-section {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35px;
+  padding-left: 30% 10%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about-section h2 {
+  font-size: 30px;
+  padding: 30px;
+}
+.about-section h2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 2%;
+}
+.about-section h2 div p {
+  font-size: 30px;
+  width: 60%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .about-section h2 div p {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+.employment {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 90%;
+  text-align: left;
+  padding: 10% 20%;
+}
+.employment h2 {
+  font-size: 30px;
+}
+.contact {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  color: lavender;
+  width: 85%;
+  padding-left: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.container input[type=text],
+.container select,
+.container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.container input[type=text] input[type=submit],
+.container select input[type=submit],
+.container textarea input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+.container input[type=text] input[type=submit] input[type=submit]:hover,
+.container select input[type=submit] input[type=submit]:hover,
+.container textarea input[type=submit] input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container input[type=text] input[type=submit] input[type=submit]:hover .container,
+.container select input[type=submit] input[type=submit]:hover .container,
+.container textarea input[type=submit] input[type=submit]:hover .container {
+  border-radius: 5px;
+  background-color: powderblue;
+  padding: 10px;
+  /* Create two columns that float next to eachother */
+}
+.container input[type=text] input[type=submit] input[type=submit]:hover .container .column,
+.container select input[type=submit] input[type=submit]:hover .container .column,
+.container textarea input[type=submit] input[type=submit]:hover .container .column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  /* Clear floats after the columns */
+}
+.container input[type=text] input[type=submit] input[type=submit]:hover .container .column .row:after,
+.container select input[type=submit] input[type=submit]:hover .container .column .row:after,
+.container textarea input[type=submit] input[type=submit]:hover .container .column .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 500px) {
+  .container input[type=text] input[type=submit] input[type=submit]:hover .container .column .row:after .column,
+  .container select input[type=submit] input[type=submit]:hover .container .column .row:after .column,
+  .container textarea input[type=submit] input[type=submit]:hover .container .column .row:after .column,
+  .container input[type=text] input[type=submit] input[type=submit]:hover .container .column .row:after input[type=submit],
+  .container select input[type=submit] input[type=submit]:hover .container .column .row:after input[type=submit],
+  .container textarea input[type=submit] input[type=submit]:hover .container .column .row:after input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+footer {
+  background-color: powder-blue;
+  justify-content: center;
+  align-items: center;
+}
